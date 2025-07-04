@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "会員検索";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Member" asp-action="Search" method="get">
+    <div class="form-group">
+        <label for="memberName">会員名:</label>
+        <input type="text" class="form-control" id="memberName" name="memberName">
+    </div>
+    <button type="submit" class="btn btn-primary">検索</button>
+</form>
+
+<hr />
+
+<h2>検索結果</h2>
+<p>ここに検索結果が表示されます。</p>
